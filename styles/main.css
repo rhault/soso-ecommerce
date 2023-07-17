@@ -1,16 +1,28 @@
 :root{
     --black: #1A1A1A;
     --black-low-emphasis: rgba(26, 26, 26, 0.60);
-    --Walsheim: 'Oswald';
+    --Walsheim: 'GT Walsheim Pro';
     --Serif:'Noto Serif';
 }
+
+@font-face{
+    font-family: 'GT Walsheim Pro';
+    src: url('../assets/font/GTWalsheimPro-Medium.woff') format('woff');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Value Serif';
+    src: url('../assets/font/Value-Serif.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Value Serif Pro';
+    src: url('../assets/font/Value-Serif-Pro.woff') format('woff');
+}
+
 *{
     box-sizing: border-box;
-    font-family: 'Inter', sans-serif;
-    font-family: 'Montserrat Alternates', sans-serif;
-    font-family: 'Noto Serif', serif;
-    font-family: 'Oswald', sans-serif;
-    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -30,8 +42,8 @@ header{
 
 .header-menu{
     align-items: center;
-    display: flex;
     border-bottom: 1px solid #F6F4EF;
+    display: flex;
     justify-content: space-between;
     padding: 24px 60px;
 }
@@ -39,17 +51,16 @@ header{
 .header-menu .logo{
     font-family: 'Montserrat Alternates';
     font-size: 42px;
+    font-weight: bold;
 }
 
 .header-menu .header-menu__middle li{
     color: var(--black);
     display: inline-block;
     padding: 0 24px;
-    font-family: var(--Walsheim);
-    font-size: 16px;
-    font-weight: 500;
+    font-family: 'GT Walsheim Pro';
+    font-size: 18px;
     letter-spacing: .5px;
-    vertical-align: center;
 }
 
 .header-menu__right{
@@ -114,16 +125,18 @@ header{
 }
 
 .header-container h1{  
-    font-family: var(--Serif);
-    font-size: 54px;
+    font-family: 'Value Serif';
+    font-size: 50px;
     letter-spacing: 1px;
+    font-weight: bold;
+    
 }
 
 .header-container button{
     background-color: var(--black);
     border-radius: 8px;
     color: #EAF586;
-    font-family: var(--Walsheim);
+    font-family: 'GT Walsheim Pro';
     font-size: 14px;
     margin-top: 48px;
     padding: 8px 20px;
@@ -139,32 +152,32 @@ header{
 .header-container .header-container__benefits{
     display: flex;
     justify-content: space-between;
-    margin: 60px 40px;
+    margin: 60px;
 }
 .header-container .header-container__benefits > div{
     align-items: center;
     display: flex;
     flex-wrap: wrap;
     height: 100px;
-    width: 410px;
+    width: 350px;
 }
 
 .header-container .header-container__benefits .icon{
-    height: 32px;
+    height: 24px;
     margin-right: 12px;
-    width: 32px;
+    width: 24px;
 }
 
 .header-container .header-container__benefits .title{
     color: var(--black);
-    font-family: var(--Serif);
-    font-size: 24px;
+    font-family: 'Value Serif Pro';
+    font-size: 20px;
     letter-spacing: 0.24px;
 }
 
 .header-container .header-container__benefits .text{
     color: var(--black-low-emphasis);
-    font-family: var(--Walsheim);
+    font-family: 'GT Walsheim Pro';
     font-size: 16px;
     margin-left: 44px;
 }
@@ -186,7 +199,7 @@ header{
 }
 
 .section-discover > span{
-    font-family: Inter;
+    font-family: 'Inter';
     font-size: 16px;
     letter-spacing: 4px;
     text-transform: uppercase;
@@ -194,7 +207,7 @@ header{
 
 .section-discover h2{
     color: var(--black);
-    font-family: var(--Serif);
+    font-family: 'Value Serif Pro';
     font-size: 48px;
     margin-bottom: 72px;
 }
@@ -210,39 +223,52 @@ header{
 }
 
 .section-discover .item-menu .title{
-    font-family: var(--Serif);
+    font-family: 'Value Serif Pro';
     font-size: 20px;
     text-align: center;
 }
 
 .section-discover .item-menu .text{
     color: rgba(26, 26, 26, 0.70);
-    font-family: var(--Walsheim);
+    font-family: 'GT Walsheim Pro';
     font-size: 14px;
     text-align: center;
 }
 
 .section-discover .section-discover__card{
+    display: flex;
+}
+
+.section-discover .item-card{
     background-color: #FFF;
     border-radius: 16px;
-    display: flex;
+    height: 331px;
     padding: 38px;
+    width: 248px;
 }
 
 .section-discover .item-card_background{
     background-image: url('../assets/img/card.svg');
+    background-size: cover;
+}
+
+.section-discover .section-discover__card .item-card_background .title{
+    color: var(--white, #FFF);
+    font-family: 'Value Serif';
+    font-size: 40px;
+    font-weight: bold;
 }
 
 .section-discover .item-card .title{
     color: #000;
-    font-family: var(--Serif);
+    font-family: 'Value Serif';
     font-size: 24px;
     font-weight: bold;
 }
 
 .section-discover .item-card .text{
     color: #808080;
-    font-family: var(--Walsheim);
+    font-family: 'GT Walsheim Pro';
     font-size: 14px;
 }
 
