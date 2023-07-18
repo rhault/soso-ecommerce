@@ -188,14 +188,16 @@ header{
     align-items: center; 
     background: linear-gradient(180deg, #EDEDF5 0%, rgba(246, 246, 210, 0.24) 100%), #FFF;
     display: flex;
+    flex-flow: column wrap;
     justify-content: center;
-    padding: 120px 60px    
+    padding: 60px 0;
 }
 
 .section-discover{
     align-items: center;
     display: flex;
     flex-direction: column;
+    padding: 60px 0;
 }
 
 .section-discover > span{
@@ -278,5 +280,86 @@ header{
     display: block;
     height: 232px;
     width: 240px;
-    
+}
+
+/* Section Testimony */
+.section-testimony{
+    align-items: center;
+    background-color: #FFF;
+    display: flex;
+    flex-direction: column;
+    padding: 120px 0;
+    width: 100%;
+}
+
+.section-testimony h2{
+    font-family: 'Value Serif Pro';
+    font-size: 48px;
+}
+
+.section-testimony .testimony__cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
+    padding: 48px;
+    width: 80%;
+}
+
+.section-testimony .item-card{
+    background-color: #F6F7D4;
+    color: #1A1A1A;
+    font-family: 'GT Walsheim Pro';
+    font-size: 14px;
+    font-weight: 400;
+    margin: 50px 30px;
+    padding: 20px;
+    position: relative;
+    top: 40px;
+    width: 307px;
+}
+
+.testimony__cards .item-card:nth-child(even){
+    top: 0;
+}
+
+.section-testimony .item-card .logo{
+    background-image: url('../assets/img/Ellipse.svg');
+    background-size: cover;
+    border-radius: 90px;
+    display: block;
+    height: 80px;
+    position: absolute;
+    right: 20px;
+    top: -40px;
+    width: 80px;
+}
+
+.section-testimony .item-card .logo_down{
+    top: calc(100% - 40px)
+}
+
+.section-testimony .stars{
+    margin-bottom: 17px;
+}
+
+.section-testimony .stars .black-star{
+    background-image: url('../assets/icon/black-star.svg');
+    display: inline-block;
+    height: 18px;
+    width: 18px;
+}
+
+.section-testimony .stars .grey-star{
+    background-image: url('../assets/icon/grey-star.svg');
+    display: inline-block;
+    height: 19px;
+    width: 19px;
+}
+
+.section-testimony .item-card .name{
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    margin-top: 16px;
 }
