@@ -158,13 +158,13 @@ header{
     align-items: center;
     display: flex;
     flex-wrap: wrap;
-    height: 100px;
+    height: 70px;
     width: 350px;
 }
 
 .header-container .header-container__benefits .icon{
     height: 24px;
-    margin-right: 12px;
+    margin-right: 18px;
     width: 24px;
 }
 
@@ -241,9 +241,11 @@ header{
 
 .section-discover .item-card{
     background-color: #FFF;
+    border: 1px solid #e3dcdc;
     border-radius: 16px;
-    height: 331px;
-    padding: 38px;
+    height: 350px;
+    margin: 48px 12px;
+    padding: 28px;
     width: 248px;
 }
 
@@ -255,28 +257,48 @@ header{
 .section-discover .section-discover__card .item-card_background .title{
     color: var(--white, #FFF);
     font-family: 'Value Serif';
-    font-size: 40px;
+    font-size: 25px;
     font-weight: bold;
 }
 
 .section-discover .item-card .title{
     color: #000;
     font-family: 'Value Serif';
-    font-size: 24px;
+    font-size: 20px;
     font-weight: bold;
 }
 
 .section-discover .item-card .text{
     color: #808080;
     font-family: 'GT Walsheim Pro';
-    font-size: 14px;
+    font-size: 12px;
 }
 
 .section-discover .item-card .imagen{
     background-image: url('../assets/img/product.svg');
+    background-size: cover;
     border-radius: 149px;
     display: block;
-    height: 232px;
-    width: 240px;
-    
+    height: 132px;
+    margin: 50px auto;
+    width: 140px;
+}
+
+.section-discover .item-card .button{
+    background-color: #EAF586;
+    border-radius: 8px;
+    border-radius: 8px;
+    font-family: 'GT Walsheim Pro';
+    text-align: center;
+    padding: 8px 28px;
+    z-index: 2;
+}
+
+.section-discover .item-card .border{
+    background-color: #FFF;
+    border: 1px solid var(--black, #1A1A1A);
+    border-radius: 8px;
+    padding: 38px;
+    position: absolute;
+    z-index: 1;
 }
