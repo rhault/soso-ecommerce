@@ -158,13 +158,13 @@ header{
     align-items: center;
     display: flex;
     flex-wrap: wrap;
-    height: 70px;
+    height: 100px;
     width: 350px;
 }
 
 .header-container .header-container__benefits .icon{
     height: 24px;
-    margin-right: 18px;
+    margin-right: 12px;
     width: 24px;
 }
 
@@ -239,15 +239,15 @@ header{
 
 .section-discover .section-discover__card{
     display: flex;
+    gap: 15px;
+    margin-top: 48px;
 }
 
 .section-discover .item-card{
     background-color: #FFF;
-    border: 1px solid #e3dcdc;
     border-radius: 16px;
-    height: 350px;
-    margin: 48px 12px;
-    padding: 28px;
+    height: 331px;
+    padding: 20px;
     width: 248px;
 }
 
@@ -259,7 +259,7 @@ header{
 .section-discover .section-discover__card .item-card_background .title{
     color: var(--white, #FFF);
     font-family: 'Value Serif';
-    font-size: 25px;
+    font-size: 26px;
     font-weight: bold;
 }
 
@@ -279,11 +279,41 @@ header{
 .section-discover .item-card .imagen{
     background-image: url('../assets/img/product.svg');
     background-size: cover;
-    border-radius: 149px;
+    border-radius: 150px;
     display: block;
-    height: 232px;
-    width: 240px;
-    
+    height: 130px;
+    margin: 38px auto;
+    width: 130px;
+}
+
+.section-discover .item-card .button{
+    margin: 0 auto;
+    position: relative;
+    width: 80%;
+}
+
+.section-discover .item-card .button a{
+    background: #EAF586;
+    border: 1px solid var(--black);
+    border-radius: 8px;
+    font-family: 'GT Walsheim Pro';
+    font-size: 12px;
+    padding: 8px 0;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    z-index: 1;
+}
+
+.section-discover .item-card .button span{
+    border: 1px solid var(--black);
+    border-radius: 8px;
+    display: inline-block;
+    height: 30px;
+    left: 5px;
+    position: absolute;
+    top: 7px;
+    width: 100%;
 }
 
 /* Section Testimony */
@@ -324,6 +354,7 @@ header{
 }
 
 .testimony__cards .item-card:nth-child(even){
+    background: #FCF5EA;
     top: 0;
 }
 
@@ -367,3 +398,4 @@ header{
     letter-spacing: 0.5px;
     margin-top: 16px;
 }
+
