@@ -424,7 +424,8 @@ header{
 }
 
 /* Section Community - header */
-.section-community .imagen-backgroud{
+
+.section-community .section-community__header{
     background-image: url('../assets/img/join.png');
     background-size: cover;
     border-radius: 16px;
@@ -444,12 +445,12 @@ header{
     max-width: 50%;
 }
 
-
-/* Section Community - Container */
 .section-community .section-community__header .button{
     margin: 34px 0;
     max-width: 200px;
 }
+
+/* Section Community - Container */
 
 .section-community .section-community__container{
     background: linear-gradient(180deg, #FDF5E9 0%, #EDEDF5 100%), linear-gradient(180deg, #EDEDF5 0%, rgba(246, 246, 210, 0.24) 100%);
@@ -457,8 +458,10 @@ header{
 }
 
 /* Section Community - healthline */
+
 .healthline{
-    margin-top: 268px;
+    font-family: 'GT Walsheim Pro';
+    margin: 268px auto 0 auto;
     padding: 60px;
     text-align: center;
     width: 90%;
@@ -472,34 +475,92 @@ header{
     background-image: url('../assets/img/healthline.svg');
     background-size: cover;
     display: inline-block;
-    height: 44px;
-    width: 272px;
+    height: 31px;
+    width: 198px;
 }
 
 .healthline .quote{
     background-image: url('../assets/img/qoute.svg');
     background-size: cover;
     display: block;
-    height: 29px;
-    margin: 54px auto 40px auto;
-    width: 39px;
+    height: 23px;
+    margin: 35px auto;
+    width: 31px;
 }
 .healthline .title p{
+    color: #1A1A1A;
     display: inline-block;
+    font-size: 30px;
+    margin-left: 15px;
+}
+
+.healthline .text{
+    color: rgba(28, 28, 28, 0.75);
+    font-size: 24px;
+    margin: 0 auto;
+    width: 60%;
 }
 
 /* Section Community - Science */
+.science{
+    margin-top: 150px;
+    text-align: center;
+}
+
+.science h2{
+    margin-bottom: 35px;
+}
 
 .science .science__card{
     display: flex;
     gap: 15px;
-    margin-top: 48px;
+    margin: 30px auto;
+    justify-content: center;
 }
 
 .science .item-card{
-    background-color: #FFF;
+    color: #FFF;
     border-radius: 16px;
     height: 331px;
     padding: 20px;
     width: 248px;
+}
+
+.science .item-card:nth-child(1){
+    background-image: url('../assets/img/yoga.svg');
+    background-size: cover;
+}
+
+.science .item-card:nth-child(2){
+    background-image: url('../assets/img/supplement-1.svg');
+    background-size: cover;
+}
+
+.science .item-card:nth-child(3){
+    background-image: url('../assets/img/fruit.svg');
+    background-size: cover;
+}
+
+.science .item-card .text{
+    font-family: 'Value Serif Pro';
+    font-size: 15px;
+    font-weight: 400;
+    text-align: left;
+}
+
+.science .item-card .time{
+    font-family: 'Poppins';
+    font-size: 10px;
+}
+
+.science .item-card .time p{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.science .item-card .clock{
+    background-image: url('../assets/icon/clock.svg');
+    display: inline-block;
+    height: 18px;
+    width: 18px;
 }
