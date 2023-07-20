@@ -27,6 +27,61 @@
     padding: 0;
 }
 
+/* h2 */
+
+h2{
+    color: var(--black);
+    font-family: 'Value Serif Pro';
+    font-size: 48px;
+    margin-bottom: 72px;
+}
+
+/* hashtag */
+
+.hashtag{
+    font-family: 'Inter';
+    font-size: 16px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+
+/* buttons */
+
+.button{
+    margin: 0 auto;
+    position: relative;
+    width: 80%;
+}
+
+.button a{
+    background: #EAF586;
+    border: 1px solid var(--black);
+    border-radius: 8px;
+    color: var(--black);
+    font-family: 'GT Walsheim Pro';
+    font-size: 12px;
+    padding: 8px 0;
+    position: absolute;
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+    z-index: 1;
+}
+
+.button span{
+    background-color: #FFF;
+    border: 1px solid var(--black);
+    border-radius: 8px;
+    display: inline-block;
+    height: 30px;
+    left: 5px;
+    position: absolute;
+    top: 7px;
+    width: 100%;
+}
+
+/* Header */
+
 header{
     width: 100%;
 }
@@ -184,6 +239,7 @@ header{
 
 
 /* Section */
+
 .section-container{
     align-items: center; 
     background: linear-gradient(180deg, #EDEDF5 0%, rgba(246, 246, 210, 0.24) 100%), #FFF;
@@ -193,25 +249,13 @@ header{
     padding: 60px 0;
 }
 
+/* Discover */
+
 .section-discover{
     align-items: center;
     display: flex;
     flex-direction: column;
     padding: 60px 0;
-}
-
-.section-discover > span{
-    font-family: 'Inter';
-    font-size: 16px;
-    letter-spacing: 4px;
-    text-transform: uppercase;
-}
-
-.section-discover h2{
-    color: var(--black);
-    font-family: 'Value Serif Pro';
-    font-size: 48px;
-    margin-bottom: 72px;
 }
 
 .section-discover .section-discover__menu{
@@ -286,49 +330,15 @@ header{
     width: 130px;
 }
 
-.section-discover .item-card .button{
-    margin: 0 auto;
-    position: relative;
-    width: 80%;
-}
-
-.section-discover .item-card .button a{
-    background: #EAF586;
-    border: 1px solid var(--black);
-    border-radius: 8px;
-    font-family: 'GT Walsheim Pro';
-    font-size: 12px;
-    padding: 8px 0;
-    position: absolute;
-    text-align: center;
-    width: 100%;
-    z-index: 1;
-}
-
-.section-discover .item-card .button span{
-    border: 1px solid var(--black);
-    border-radius: 8px;
-    display: inline-block;
-    height: 30px;
-    left: 5px;
-    position: absolute;
-    top: 7px;
-    width: 100%;
-}
-
 /* Section Testimony */
+
 .section-testimony{
     align-items: center;
     background-color: #FFF;
     display: flex;
     flex-direction: column;
-    padding: 120px 0;
+    padding: 120px 0 30px 0;
     width: 100%;
-}
-
-.section-testimony h2{
-    font-family: 'Value Serif Pro';
-    font-size: 48px;
 }
 
 .section-testimony .testimony__cards{
@@ -399,3 +409,97 @@ header{
     margin-top: 16px;
 }
 
+.section-community{
+    background-color: #FFF;
+    width: 100%;
+}
+
+/*  Section Community */
+
+.section-community{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    position: relative;
+}
+
+/* Section Community - header */
+.section-community .imagen-backgroud{
+    background-image: url('../assets/img/join.png');
+    background-size: cover;
+    border-radius: 16px;
+    height: 750px;
+    left: calc(5%);
+    margin: 0 auto;
+    padding: 60px;
+    position: absolute;
+    top: 0;
+    width: 90%;
+}
+
+.section-community .section-community__header h3{
+    font-family: 'Value Serif Pro';
+    font-size: 48px;
+    font-weight: 400;
+    max-width: 50%;
+}
+
+
+/* Section Community - Container */
+.section-community .section-community__header .button{
+    margin: 34px 0;
+    max-width: 200px;
+}
+
+.section-community .section-community__container{
+    background: linear-gradient(180deg, #FDF5E9 0%, #EDEDF5 100%), linear-gradient(180deg, #EDEDF5 0%, rgba(246, 246, 210, 0.24) 100%);
+    margin-top: 560px;
+}
+
+/* Section Community - healthline */
+.healthline{
+    margin-top: 268px;
+    padding: 60px;
+    text-align: center;
+    width: 90%;
+}
+
+.healthline .title{
+    text-align: center;
+}
+
+.healthline .title .imagen{
+    background-image: url('../assets/img/healthline.svg');
+    background-size: cover;
+    display: inline-block;
+    height: 44px;
+    width: 272px;
+}
+
+.healthline .quote{
+    background-image: url('../assets/img/qoute.svg');
+    background-size: cover;
+    display: block;
+    height: 29px;
+    margin: 54px auto 40px auto;
+    width: 39px;
+}
+.healthline .title p{
+    display: inline-block;
+}
+
+/* Section Community - Science */
+
+.science .science__card{
+    display: flex;
+    gap: 15px;
+    margin-top: 48px;
+}
+
+.science .item-card{
+    background-color: #FFF;
+    border-radius: 16px;
+    height: 331px;
+    padding: 20px;
+    width: 248px;
+}
