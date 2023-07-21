@@ -502,6 +502,7 @@ header{
 }
 
 /* Section Community - Science */
+
 .science{
     margin-top: 150px;
     text-align: center;
@@ -519,10 +520,14 @@ header{
 }
 
 .science .item-card{
-    color: #FFF;
     border-radius: 16px;
+    color: #FFF;
+    display: flex;
+    flex-direction: column;
     height: 331px;
-    padding: 20px;
+    justify-content: end;
+    padding: 12px;
+    text-align: initial ;
     width: 248px;
 }
 
@@ -543,7 +548,7 @@ header{
 
 .science .item-card .text{
     font-family: 'Value Serif Pro';
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 400;
     text-align: left;
 }
@@ -555,12 +560,28 @@ header{
 
 .science .item-card .time p{
     display: inline-block;
-    vertical-align: middle;
+    height: 18px;
+    vertical-align: bottom;
 }
 
 .science .item-card .clock{
     background-image: url('../assets/icon/clock.svg');
     display: inline-block;
     height: 18px;
+    margin-top: 10px;
     width: 18px;
+}
+
+/* Section Community - About*/
+
+.about{
+    background-color: #FFF;
+    margin-top: 120px;
+    padding: 120px;
+    text-align: center; 
+}
+
+.about .about__card{
+    margin: 0 auto;
+    width: 80%
 }
