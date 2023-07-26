@@ -80,9 +80,28 @@
                         </div>
                     </div>
                     <div class="section-discover__card">
+                        <img class="arrow_left" src="./assets/icon/arrow_left.svg"></img>
                         <div class="item-card item-card_background">
                             <p class="title">Find the perfect fit for you </p>
                             <div class="button">Take the quiz</div>
+                        </div>
+                        <div class="item-card">
+                            <p class="title">Multivitamin 18+</p>
+                            <p class="text">Personalized prescription skin care</p>
+                            <span class="imagen"></span>
+                            <div class="button">
+                                <a href="#">Add to cart - $12</a>
+                                <span> </span>
+                            </div>
+                        </div>
+                        <div class="item-card">
+                            <p class="title">Multivitamin 18+</p>
+                            <p class="text">Personalized prescription skin care</p>
+                            <span class="imagen"></span>
+                            <div class="button">
+                                <a href="#">Add to cart - $12</a>
+                                <span> </span>
+                            </div>
                         </div>
                         <div class="item-card">
                             <p class="title">Multivitamin 18+</p>
@@ -231,10 +250,15 @@
                         <div class="about__card">
                             <div class="item-card">
                                 <p class="title">How do I choose the right supplement for my needs?</p>
-                                <p class="text">We offer a personalized quiz that takes into account your specific health goals, dietary preferences, and lifestyle factors. Based on your responses, we provide tailored recommendations to help you find the supplements that best suit your needs.</p>
-                                <span class="close"> </span>
+                                <p class="text dropdown_text hidden">We offer a personalized quiz that takes into account your specific health goals, dietary preferences, and lifestyle factors. Based on your responses, we provide tailored recommendations to help you find the supplements that best suit your needs.</p>
+                                <span class="open show"> </span>
+                                <span class="close hidden"> </span>
+                            </div>
+                            <div class="item-card 2">
+                                <p class="title">How do I choose the right supplement for my needs?</p>
+                                <p class="text dropdown_text hidden">We offer a personalized quiz that takes into account your specific health goals, dietary preferences, and lifestyle factors. Based on your responses, we provide tailored recommendations to help you find the supplements that best suit your needs.</p>
                                 <span class="open"> </span>
-                                </div>
+                                <span class="close hidden"> </span>
                             </div>
                         </div>
                     </div>
@@ -242,5 +266,35 @@
             </section>
         </section>
     </main>
+    <script>
+        const scroll_x = document.querySelector('.section-discover__card');
+        const arrow_left = document.querySelector('.arrow_left');
+        arrow_left.addEventListener('click', event => {
+            const posiction_x = scroll_x.scrollLeft;
+            scroll_x.scrollLeft += 248;
+        })
+
+        const text = document.querySelector('.dropdown_text');
+        const open_dropdown = document.querySelectorAll('.open');
+        const close_dropdown = document.querySelectorAll('.close');
+        
+        open_dropdown.forEach(element => {
+            element.addEventListener('click', ({target}) => {
+                const dropdown_container = target.parentElement;
+                const dropdown_text = dropdown_container.querySelector('.dropdown_text');
+                const dropdown_close = dropdown_container.querySelector('.close');
+                const dropdown_open = dropdown_container.querySelector('.open');
+
+                dropdown_text.style.display = toggle(dropdown_text);
+                dropdown_close.style.display = toggle(dropdown_close);
+                console.log(dropdown_open.style.display)
+                dropdown_open.style.display = toggle(dropdown_open);  
+            });
+        });
+
+        const toggle = (element) => {
+            return element.style.display === '' ? "block" : "none"
+        }
+    </script>
 </body>
 </html>
