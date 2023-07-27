@@ -251,7 +251,7 @@
                             <div class="item-card">
                                 <p class="title">How do I choose the right supplement for my needs?</p>
                                 <p class="text dropdown_text hidden">We offer a personalized quiz that takes into account your specific health goals, dietary preferences, and lifestyle factors. Based on your responses, we provide tailored recommendations to help you find the supplements that best suit your needs.</p>
-                                <span class="open show"> </span>
+                                <span class="open"> </span>
                                 <span class="close hidden"> </span>
                             </div>
                             <div class="item-card 2">
@@ -274,11 +274,13 @@
             scroll_x.scrollLeft += 248;
         })
 
-        const text = document.querySelector('.dropdown_text');
-        const open_dropdown = document.querySelectorAll('.open');
-        const close_dropdown = document.querySelectorAll('.close');
+        const dropdown_text = document.querySelector('.dropdown_text');
+        const dropdown_open = document.querySelectorAll('.open');
+        const dropdown_close = document.querySelectorAll('.close');
         
-        open_dropdown.forEach(element => {
+        
+
+        /* open_dropdown.forEach(element => {
             element.addEventListener('click', ({target}) => {
                 const dropdown_container = target.parentElement;
                 const dropdown_text = dropdown_container.querySelector('.dropdown_text');
@@ -287,13 +289,15 @@
 
                 dropdown_text.style.display = toggle(dropdown_text);
                 dropdown_close.style.display = toggle(dropdown_close);
-                console.log(dropdown_open.style.display)
-                dropdown_open.style.display = toggle(dropdown_open);  
+                console.log(dropdown_open.style)
+                //dropdown_open.style.display = toggle(dropdown_open);  
             });
-        });
+        }); */
 
-        const toggle = (element) => {
-            return element.style.display === '' ? "block" : "none"
+        const displayToggle = (element) => {
+            const elementStyle = window.getComputedStyle(element);
+            const elementProperty = elementStyle.getPropertyValue('display');
+            return elementProperty === 'none' ? 'block' : 'none';
         }
     </script>
 </body>

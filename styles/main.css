@@ -637,6 +637,6 @@ header{
 }
 
 .about .about__card .item-card .open{
-    display: block;
+    margin: 10px;
     background-image: url('../assets/icon/plus.svg');
 }
